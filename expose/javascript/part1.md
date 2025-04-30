@@ -1,0 +1,7 @@
+1. Here we get ```values added: 20``` printed to the console
+2. Here we get ```final result: 20``` printed to the console
+3. This case is a prime example of why we should not use var.  Even though result was declared in the if statement, it impacts the result that is found in the overall function scope.  Because of this, if we did not want to update a specific case of result but instead just a local variable, because of the var keyword we would update the main result value
+4. Here we get ```values added: 20``` printed to the console
+5. Here we get an error as the scope of the result is a local variable found in the if statement block.  Since the result variable is not accessible in the function scope, there is an error present that result is not defined.
+6. Here we get an error as const keeps a variable unchanging from its initial initiation.  Because of this, when we try to complete the add process and update result with this, it raises an error.  If we were to remove the addition, the console would have logged ```values added: 0``` as that is the set constant value.
+7. Here we get the error we had earlier of editing a constant value.  If the add boolean was false, there would still be an error as const does not give the variable a function scope so line 13 would have raised an error that the value was not defined in its scope.
