@@ -1,0 +1,2 @@
+1. The bug was that the type was not checked of the two number and they were treated as strings, causing string concatenation not addition
+2. I would fix it by type casting the parameters to number when adding
